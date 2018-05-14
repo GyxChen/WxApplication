@@ -1,0 +1,23 @@
+.mainbody{
+  display: flex;
+  padding: 20rpx;
+} 
+.inputheader{
+  width: 180rpx;
+  text-align: right;
+
+}
+.botton{
+  display: flex;
+  justify-content: space-between;
+}
+.form{
+  
+  background-color:#CCEBFF
+  
+}
+.box_input{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}

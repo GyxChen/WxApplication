@@ -1,0 +1,8 @@
+<!--pages/home/home.wxml-->
+<view class='.container'>
+  <image  class='animation' src='{{imageurl}}' animation="{{animationData}}" ></image>
+  <image bindtap='nav' src='http://p8cz5iv1n.bkt.clouddn.com/biaoti.png' style='width:400rpx;height:100rpx; margin:350rpx;'/>
+  <!-- <image bindtap='nav' src='http://pic.58pic.com/58pic/15/96/58/17Y58PICJF3_1024.jpg' style='padding:0rpx;width:100rpx;height:100rpx;'/> -->
+</view>
+
+ 

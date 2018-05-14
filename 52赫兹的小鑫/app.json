@@ -1,0 +1,41 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/index/index",
+    "pages/login/login",
+    "pages/all/all",
+    "pages/about/about",
+    "pages/castall/castall",
+    "pages/updatainfo/updatainfo"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "科协助手",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {
+      "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath":"Source/Image/index1.png",
+        "selectedIconPath":"Source/Image/index2.png"
+    },
+    {
+      "pagePath": "pages/login/login",
+      "text": "科协注册",
+      "iconPath": "Source/Image/login1.png",
+      "selectedIconPath": "Source/Image/login2.png"
+    },
+    {
+      "pagePath":"pages/about/about",
+      "text":"关于",
+      "iconPath": "Source/Image/about1.png",
+      "selectedIconPath": "Source/Image/about2.png"
+    }
+    ]
+    
+  }
+}

@@ -1,0 +1,9 @@
+<view class='allcontainer'>
+  <image style='width:325rpx;height:325rpx;' src='https://gss1.bdstatic.com/-vo3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268/sign=815f3436339b033b2c88fbdc2dce3620/4a36acaf2edda3cc29ac911206e93901213f92b3.jpg'></image>
+  <view class='title'>
+    <text >南京邮电大学通达学院</text>
+  </view>
+ <view style='width:700rpx; font-size:30rpx;'>
+   <text space="emsp" style='font-weight:bolder'>南京邮电大学通达学院，位于江苏扬州，是经国家教育部批准，由南京邮电大学1999年创办的全日制本科独立学院.南京邮电大学与扬州市人民政府合作，在荣获联合国人居奖、素有“竹西佳处，淮左名都”之称的历史文化名城扬州共建新校区。新校区坐落于扬州市扬子津科教园区，占地近700亩.学院拥有专、兼职教师467人，其中高职168人，具有博士、硕士学位的教师占总数的73%，享受政府特殊津贴9人，省“333工程”培养对象2人，省“青蓝工程”中青年学术带头人和优秀青年骨干教师11人；现有在校生8300余人；现设有22个以通信信息类专业为主干，理、工、文、管等相综合的优势专业及专业方向，同时新增金融工程、通信工程嵌入式开发专业。</text>
+ </view>
+</view>

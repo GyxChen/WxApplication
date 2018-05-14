@@ -1,0 +1,12 @@
+/* pages/home/home.wxss */
+.title{
+  font:italic bolder;
+  position:fixed;
+
+  margin: 0 auto;
+}
+.animation{
+  width:200rpx;
+  height: 200rpx;
+  display:flex;
+}

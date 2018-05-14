@@ -1,0 +1,49 @@
+<view style='display:flex;flex-direction:column;align-items:center'>
+  <view style='height:300rpx' >
+    <cover-image style='height:200rpx;width:200rpx; border-style: solid; border-radius:50%; margin:0 auto' src='https://imgt.388g.com/jzd/201707/149965548370719.jpeg'></cover-image>
+    <text style='display:inline-block;padding:20rpx 280rpx 20rpx 280rpx;'>小萌新注册</text>
+  </view>
+
+  <view style='dislay:flex;   height:750rpx; background-color:#66C2FF; border-radius: 10%;' >
+
+      <form  catchsubmit="formSubmit" catchreset="formReset">
+        <view  class="mainbody">
+          <text   class='inputheader'>姓名:</text>
+          <input style='width:200rpx;' name="name" focus='false'  type='text' class="form" placeholder="请输入姓名" placeholder-style='font-size:30rpx;'/>
+        </view>
+
+        <view class="mainbody">
+          <text class='inputheader'>学号:</text>
+          <input style=' width:200rpx;' placeholder-style='font-size:30rpx;' name="number" focus='false'  class="form" type='number' placeholder="请输入学号"/>
+        </view>
+
+        <view class="mainbody">
+          <text class='inputheader'>第一志愿:</text>
+          <input  placeholder-style='font-size:30rpx;' name="firstwill" focus='false'  class="form" placeholder="请输入第一志愿"/>
+        </view>
+
+        <view class="mainbody">
+          <text class='inputheader'>第二志愿:</text>
+          <input  placeholder-style='font-size:30rpx;' name="secondwill" focus='false'   class="form" placeholder="请输入第二志愿"/>
+        </view>
+        
+        <view class="mainbody">
+          <text class='inputheader'>QQ:</text>
+          <input  placeholder-style='font-size:30rpx;' name="qq" focus='false'  class="form" type='number' placeholder="请输入QQ"/>
+        </view>
+
+        <view class="mainbody">
+          <text class='inputheader'>电话号码:</text>
+          <input  placeholder-style='font-size:30rpx;' name="phone" focus='true'  class="form" type='number' placeholder="请输入电话号码"/>
+        </view>
+
+         <view style='padding:40rpx' class="botton">
+          <button type="primary" formType="submit">提交</button>
+          <button formType="reset">重置</button>
+         </view>
+
+      </form>
+
+  </view>
+
+</view> 

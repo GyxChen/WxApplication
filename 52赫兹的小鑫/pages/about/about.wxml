@@ -1,0 +1,29 @@
+<!--pages/about/about.wxml-->
+<view class="about">
+  <text style='font-size:10rpx;' style='padding:20rpx;'>52HZ</text>
+  
+  <image catchtap='details' style='width:150rpx;height:150rpx; border-radius:50%' src='http://p8cz5iv1n.bkt.clouddn.com/%E5%A3%AB%E5%AE%98%E9%95%BF.png'></image>
+    <view style='display:flex;'>
+    <text  style='font-weight:bolder;padding:30rpx;'>QQ:</text>
+    <text style='padding:30rpx 0rpx;'>3370436119</text>
+    
+  </view>
+  <view style='display:flex;'>
+    <text  style='font-weight:bolder;padding:30rpx;'>邮箱:</text>
+    <text style='padding:30rpx 0rpx;'>chenxinyu85@icloud.com</text>
+
+  </view>
+    <view style='display:flex;'>
+    
+    <text style='padding:30rpx 0rpx;'>图片来源:</text>
+    <text  style='font-weight:bolder;padding:30rpx;'>陈佳新</text>
+  </view>
+ <view style='display:flex;'>
+    <text style='padding:30rpx 0rpx;'>后台支持:</text>
+    <text  style='font-weight:bolder;padding:30rpx;'>LearnCloud</text>
+  </view>
+  <view style='margin:350rpx auto; display:flex; flex-direction:column; font-size:20rpx; '>
+    <text style='color:grey ;text-align: center' >版本号:{{version}}</text>
+  <text style='color:grey'>(多次点击头像查看日志)</text>
+  </view>
+</view>

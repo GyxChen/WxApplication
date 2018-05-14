@@ -1,0 +1,11 @@
+<!--pages/updatainfo/updatainfo.wxml-->
+<view class='.updatainfo'>
+  <image catchtap='tap'  class='image' src='{{imageurl}}'></image>
+  <text style='margin:20rpx auto'>日志</text>
+  <view class='mainbody' wx:for="{{text}}">
+    <text>{{item.version}}</text>
+    <text style='color:grey'>{{item.detail}}</text>
+  </view>
+ <text style='margin:50rpx auto 0rpx; color:grey;font-size:25rpx;'>源码地址(没啥东西😅)</text>
+ <text selectable='true'>124</text>
+</view>

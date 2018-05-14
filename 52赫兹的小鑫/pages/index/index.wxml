@@ -1,0 +1,57 @@
+<view>
+ <view class='selection'>
+    <swiper style='height:500rpx' indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{imgUrls}}">
+          <swiper-item>
+            <image src="{{item}}" class="slide-image" width="355" height="150"/>
+          </swiper-item>
+        </block>
+    </swiper>
+ </view>
+
+ <view>
+
+   <view class="header">
+     <text style='font-weight:bold'>科协与技术协会</text>
+     <navigator url='../castall/castall' class='text-all'>全部</navigator>
+   </view>
+
+   <view class='content'>
+      <view class='content-item' wx:for="{{contentItem}}">
+        <image src='{{item.picture}}' />
+        <view class="">
+          <text class='content-item-text'>{{item.text}}</text>
+        </view>
+      </view>
+      
+   </view>
+    <view class="header">
+        <text style='font-weight:bold'>校园概览</text>
+        <navigator url='../all/all'  class='text-all'>全部</navigator>
+</view >
+
+    <view class="list-item" wx:for="{{bigimg}}">
+      <view class="list-item-images">
+        <image src='http://www.tdxy.com.cn/uploadfile/2017/0421/20170421042320491.jpg'class="avatar"></image>
+        <image src='{{item.picture}}' style='height:100%' ></image>
+      </view>
+      <view  class="list-item-text">
+          <view  class="list-item-tex-title">
+            <text>{{item.title}}</text>
+          </view>
+          <view  class='list-item-tex-content'>
+            <text>{{item.commets}}</text>
+          </view>
+      </view>
+    </view>
+</view> 
+
+  <view class="header">
+      <text style='font-size:14px'>通达学院科协</text>
+      <navigator class='text-all' open-type='switchTab' url='../login/login' hover-class='buttontapped'>立即注册</navigator>
+  </view> 
+    <view style="display: flex;justify-content: center;">
+      <image style='width:500rpx;  border-radius: 50% ; border:2rpx dashed #445CBB;' src="http://www.tdxy.com.cn/uploadfile/2017/0421/20170421041518399.jpg" ></image>
+    </view>
+</view>
