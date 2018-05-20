@@ -18,9 +18,9 @@
    </view>
 
    <view class='content'>
-      <view class='content-item' wx:for="{{contentItem}}">
-        <image src='{{item.picture}}' />
-        <view class="">
+      <view class='content-item' bindtap='readArticle'  wx:for="{{contentItem}}" data-id="{{item.id}}">
+        <image class='slide-image' src='{{item.picture}}' />
+        <view>
           <text class='content-item-text'>{{item.text}}</text>
         </view>
       </view>
@@ -33,8 +33,9 @@
 
     <view class="list-item" wx:for="{{bigimg}}">
       <view class="list-item-images">
-        <image src='http://www.tdxy.com.cn/uploadfile/2017/0421/20170421042320491.jpg'class="avatar"></image>
-        <image src='{{item.picture}}' style='height:100%' ></image>
+        <image 
+        src='http://www.tdxy.com.cn/uploadfile/2017/0421/20170421042320491.jpg'class="avatar"></image>
+        <image class='slide-image' src='{{item.picture}}' style='height:100%' ></image>
       </view>
       <view  class="list-item-text">
           <view  class="list-item-tex-title">

@@ -1,31 +1,37 @@
 //index.js
 //获取应用实例
-
+const AV = require('../../utils/av-weapp-min.js');
 Page({
   data: {
     indicatorDots: true,
-    imgUrls: [    'http://www.tdxy.com.cn/uploadfile/2017/0421/20170421041518399.jpg',
-      'http://www.tdxy.com.cn/uploadfile/2017/0421/20170421041031259.jpg',
-      'http://www.tdxy.com.cn/uploadfile/2017/0421/20170421050052732.jpg'
-    ],
+    // 'http://www.tdxy.com.cn/uploadfile/2017/0421/20170421041518399.jpg',
+    // 'http://www.tdxy.com.cn/uploadfile/2017/0421/20170421041031259.jpg',
+    // 'http://www.tdxy.com.cn/uploadfile/2017/0421/20170421050052732.jpg'
+    imgUrls: [],
     contentItem: ['http://p8cz5iv1n.bkt.clouddn.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E9%83%A8.jpg', 'http://p8cz5iv1n.bkt.clouddn.com/%E5%8A%9E%E5%85%AC%E4%B8%AD%E5%BF%83.jpg', 'http://p8cz5iv1n.bkt.clouddn.com/%E7%94%B5%E5%AD%90%E9%83%A83.jpg', 'http://p8cz5iv1n.bkt.clouddn.com/%E5%95%86%E5%8A%A1%E9%83%A8.jpg'],
     contentItem:[{
+      id:0,
       picture:'http://p8cz5iv1n.bkt.clouddn.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E9%83%A8.jpg',
       text:'计算机部'},{
+        id:1,
         picture:'http://p8cz5iv1n.bkt.clouddn.com/%E5%8A%9E%E5%85%AC%E4%B8%AD%E5%BF%83.jpg',
         text:'办公中心'
       },{
+        id:2,
         picture:'http://p8cz5iv1n.bkt.clouddn.com/%E7%94%B5%E5%AD%90%E9%83%A83.jpg',
         text:'电子部'
       },{
+        id:3,
         picture:'http://p8cz5iv1n.bkt.clouddn.com/%E5%95%86%E5%8A%A1%E9%83%A8.jpg',
         text:'商务部'
       },{
+        id:4,
         picture:'http://p8cz5iv1n.bkt.clouddn.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E9%83%A82.jpg',
         text:'网络部'
       },{
-        picture:'http://p8cz5iv1n.bkt.clouddn.com/%E7%94%B5%E5%AD%90%E9%83%A83.jpg',
-        text:'电子部'
+        id:5,
+        picture:'http://img.zcool.cn/community/014ffa5a124e89a80121985c12fb26.jpg@1280w_1l_2o_100sh.jpg',
+        text:'立即前往科协!'
       }
       ],
     bigimg: [{
@@ -49,8 +55,24 @@ Page({
     duration: 500,
     autoplay: true
   },
-  onLoad:function(){
+  readArticle: function (e) {
+    var $data = e.currentTarget.dataset; 
+    console.log($data.id);
+    if($data.id==5){
+      wx.navigateTo({
+        url: '../goTo/goTo'
+      })
+    }
   },
+
+
+onReady:function(){
+  var that = this;
+  new AV.Query('Icon')
+    .get('5b0168909f54543b31b3263b')
+    .then(datas => this.setData({ imgUrls: datas.attributes.urls }))
+    .catch(console.error);
+},
   musicOn:function(){
     wx.playBackgroundAudio({
       dataUrl: 'http://p8cz5iv1n.bkt.clouddn.com/%E9%BA%BB%E6%9E%9D%E5%87%86%20-%20hope.mp3',

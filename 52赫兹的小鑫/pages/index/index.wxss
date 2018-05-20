@@ -47,11 +47,12 @@ page{
   position: absolute;
   bottom:0px;
   font-size:12px;/*字体的大小*/
-  background:-webkit-linear-gradient(bottom,rgba(0,0,0,1),rgba(0,0,0,0));/* 图片下方的渐变色 */
+  /* background:-webkit-linear-gradient(bottom,rgba(0,0,0,1),rgba(0,0,0,0)); 图片下方的渐变色  */
   color: white;
   width:100%;
 }
 .list-item{
+  
   height: 600rpx;
   width: 100%;
   position: relative; 
@@ -100,4 +101,10 @@ page{
 }
 .buttontapped{
   color:cornflowerblue;
+}
+.slide-image{
+  border-radius: 10%;
+  border-style: solid;
+  border:1rpx;
+  border-color: black;
 }
