@@ -1,0 +1,12 @@
+/* pages/admin/admin.wxss */
+.admin{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.detail{
+  margin:20rpx auto;
+  display: flex;
+ 
+}

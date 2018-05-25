@@ -1,0 +1,12 @@
+/* pages/all/all.wxss */
+.title{
+  font-style:normal;
+  font-size:70rpx;
+}
+.allcontainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align:center;
+  align-items: center;
+}

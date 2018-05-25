@@ -1,0 +1,9 @@
+.botton{
+  display: flex;
+  
+}
+.form{
+  border-radius: 10rpx;
+  border:solid 5rpx cadetblue;
+  width: 500rpx;
+}

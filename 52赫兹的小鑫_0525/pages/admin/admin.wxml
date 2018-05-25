@@ -1,0 +1,9 @@
+<view class='.admin'>
+<text >Admin</text>
+<image  style='width:200rpx;height:200rpx;' src='http://p8qebi3rc.bkt.clouddn.com/admin.png'></image>
+  <view class='.detail'wx:for="{{dataform}}" wx:for-item="testobject" wx:key="objectId">
+
+    <text style='margin:auto 10rpx' >{{testobject.name}}</text>
+    <text>{{testobject.phone}}</text>
+  </view>
+</view>

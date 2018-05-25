@@ -1,0 +1,186 @@
+.mpage {
+  z-index: 10;
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  background-color: #e7eaef;
+  
+}
+.withAnimate {
+  transition: all 300ms ease;
+
+}
+.search {
+  background: white;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+.search .avatar {
+  padding: 30rpx;
+}
+.search .avatar image {
+  width: 50rpx;
+	height: 50rpx;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  padding: 60rpx;
+  border-bottom: 20rpx solid #dbdbdb;
+}
+.item image {
+  height: 150rpx;
+  width: 150rpx;
+}
+.user {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #e7eaef;
+  border-right: 1px solid #dbdbdb;
+  box-sizing: border-box;
+}
+.user .user-box {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background:-webkit-linear-gradient(left,rgba(	0,191,255,0.5),rgba(	135,206,250,0.8))
+}
+.user .user-box .user-face-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:snow;
+  padding: 20rpx;
+  margin-bottom: 100rpx;
+}
+.user .user-box .user-face {
+  width: 150rpx;
+	height: 150rpx;
+}
+.user .user-box .one-menu {
+  border-radius: 10rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+  background:-webkit-linear-gradient(right, rgba(		255,140,0,1),rgba(	255,140,0,1));
+  color:black;
+  font-size: 38rpx;
+}
+page{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.header{
+  border-left-width: 5px;  /* 设置绿色的细线 */
+ 
+  border-left-style: solid;
+
+  border-left-color: green;
+
+  display: flex;
+  
+  justify-content: space-between; /* 有空间间距 */
+
+  padding-right: 10rpx; /* 补右边的边距10rpx */
+ 
+  padding-left: 10rpx;/* 补左边的边距10rpx */
+
+}
+.text-all{
+  color: limegreen;
+  font-size: 14px;
+}
+.content{
+  display: flex;
+  flex-direction: row;/*对齐方向*/
+  flex-wrap: wrap;/*内容空间自适应*/
+  justify-content: center
+}
+.content-item{
+  height: 200rpx;
+  width:46%;
+  margin: 5px;/*边缘界限*/
+  justify-content: center;/* 水平方向居中对齐 */
+  position: relative;
+  border-style: solid;
+  border: 1rpx;
+}
+.content-item image{
+  width:  100%;
+  height: 100%;
+}
+.content-item-text{
+  position: absolute;
+  bottom:0px;
+  font-size:12px;/*字体的大小*/
+  /* background:-webkit-linear-gradient(bottom,rgba(0,0,0,1),rgba(0,0,0,0)); 图片下方的渐变色  */
+  color: white;
+  width:100%;
+}
+.list-item{
+  
+  height: 600rpx;
+  width: 100%;
+  padding:0 30rpx;
+}
+.list-item-images{
+  height: 400rpx;
+  width: 100%;
+  position: relative;
+}
+ /* .list-item-images image{/
+   height: 100%;
+}  */
+/* 可以对格式代码进行重载 */
+.avatar{
+  position: absolute;
+  height: 100%;
+  width:100%;
+  border-radius: 100%;
+  bottom:-25px;
+  right: 25px;
+}
+.avatar{
+  height: 50px;
+  width: 50px;
+}
+.list-item-text{
+  height: 200rpx;
+  bottom: 0rpx;
+}
+
+ .list-item-tex-title{
+  font-size: 20px;
+  margin-top: 20rpx;
+} 
+.list-item-tex-content{
+  display: flex;
+  justify-content: center;
+  width: 320px;
+  margin-top: 20rpx;
+  font-size: 15px;
+  color: #999
+}
+.video{
+  display: flex;
+  margin: 10rpx;
+}
+.buttontapped{
+  color:cornflowerblue;
+}
+.slide-image{
+  border-radius: 10%;
+  border-style: solid;
+  border:1rpx;
+  border-color: black;
+}

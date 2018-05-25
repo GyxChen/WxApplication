@@ -1,0 +1,15 @@
+<view>
+<text>nihao</text>
+
+<view>
+<import src="../lookAndCollect-template/lookAndCollect-template.wxml" />
+<template name="indexTemplate">
+  <view class="user-info">
+    <image class="avatar" src="{{avatar}}"></image>
+    <text class="name">{{name}}</text>
+    <text class="date">{{date}}</text>
+  </view>
+</template>
+  <image src='{{detail._file[0].url}}'></image>
+</view>
+</view>

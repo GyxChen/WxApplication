@@ -1,0 +1,34 @@
+<!--pages/about/about.wxml-->
+
+<view class="about">
+  <text style='font-size:10rpx;' style='padding:20rpx;'>52赫兹</text>
+  
+  <image catchtap='details' style='width:150rpx;height:150rpx; border-radius:50%' src='{{picture}}'></image>
+    <view style='display:flex;'>
+    <text  style='font-weight:bolder;padding:30rpx;'>QQ:</text>
+    <text style='padding:30rpx 0rpx;'>3370436119</text>
+    
+  </view>
+  <view style='display:flex;'>
+    <text  style='font-weight:bolder;padding:30rpx;'>邮箱:</text>
+    <text style='padding:30rpx 0rpx;'>chenxinyu85@icloud.com</text>
+
+  </view>
+    <view style='display:flex;'>
+    
+    <text style='padding:30rpx 0rpx;'>图片来源:</text>
+    <text  style='font-weight:bolder;padding:30rpx;'>陈佳新</text>
+  </view>
+ <view style='display:flex;'>
+    <text style='padding:30rpx 0rpx;'>后台支持:</text>
+    <text  style='font-weight:bolder;padding:30rpx;'>LeanCloud</text>
+  </view>
+  <view style='margin:320rpx auto; display:flex; flex-direction:column; font-size:20rpx; '>
+  <view style='display:flex;margin:20rpx auto'>
+    <text style='margin:0 auto; text-align: center' >版本号:</text>
+    <text style='margin:0 20rpx; border-radius: 10%; border:solid 3rpx; color:grey;border-color:cornflowerblue;color:grey ;text-align: center'>{{version}}</text>
+  </view>
+    
+  <text style='font-weight:bolder; color:black'>(多次点击头像查看日志)</text>
+  </view>
+</view>

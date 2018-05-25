@@ -1,0 +1,8 @@
+<!--pages/home/home.wxml-->
+<view class='.container'>
+  <image  class='animation' src='{{imageurl}}' animation="{{animationData}}" ></image>
+  <image animation='{{animationData_title}}' bindtap='nav' src='{{imageurl_title}}' style='width:400rpx;height:100rpx; margin:350rpx auto 20rpx'/>
+  <text animation='{{animationData_title}}' style='font-size:20rpx;font-style:italic;color:grey'>{{inhide}}</text>
+</view>
+
+ 

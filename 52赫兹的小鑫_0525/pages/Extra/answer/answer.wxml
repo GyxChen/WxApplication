@@ -1,0 +1,17 @@
+<view>
+  <view class='input'>
+    <input  confirm-type='done' class='form' 
+    bindinput='bindKeyInput' style='color:grey' placeholder="关于你的评论"></input>
+    <image bindtap='remarkpro' style='margin:0 auto;width:70rpx;height:70rpx' src='http://p8qebi3rc.bkt.clouddn.com/finish.png' ></image>
+  </view>
+
+  <view class='remarks' wx:for='{{answer}}'>
+    <text style='padding:0rpx 20rpx'>回复:</text>
+    <text>{{item}}</text>
+  </view>
+
+  <view>
+    <text style='padding:0rpx 20rpx; color:grey'>回复:</text>
+    <text style='color:grey'>{{inputValue}}</text>
+  </view>
+</view>

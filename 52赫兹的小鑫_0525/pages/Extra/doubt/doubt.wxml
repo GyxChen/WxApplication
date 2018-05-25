@@ -1,0 +1,11 @@
+  <view>  
+  <image class='cloud' src='http://p8qebi3rc.bkt.clouddn.com/%E9%97%AE%E5%8F%B7%E4%BA%91%E6%9C%B5.png'></image>
+  <image class='askicon' src='http://p8cz5iv1n.bkt.clouddn.com/ask.png' bindtap='ask'></image>
+  <view wx:for='{{detail_all}}'wx:for-item="doubtAndAnswer">
+    <view bindtap='NavigateToAnswer'  class='doubtFrame'data-id="{{doubtAndAnswer.ID}}">
+      <image style='width:80rpx;height:80rpx' src='{{doubticon}}'></image>
+      <text>{{doubtAndAnswer.doubt}}</text> 
+      <image   style='margin:0rpx 520rpx 0; top:50; width:80rpx;height:80rpx' src='{{answericon}}'></image>
+  </view>
+ </view>
+</view>

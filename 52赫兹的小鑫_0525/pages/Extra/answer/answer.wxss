@@ -1,0 +1,17 @@
+.form{
+  border-radius: 10rpx;
+  border: solid 1rpx;
+  height: 50rpx;
+  width: 600rpx;
+}
+.input{
+  display: flex;
+  
+
+}
+.remarks{
+  margin:20rpx;
+  border-radius: 10rpx;
+  width:600rpx;
+  border: solid 5rpx darkcyan;
+}

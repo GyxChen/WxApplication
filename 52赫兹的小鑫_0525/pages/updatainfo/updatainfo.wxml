@@ -1,0 +1,26 @@
+<!--pages/updatainfo/updatainfo.wxml-->
+<view class='.updatainfo'>
+  <image style='border-radius:50rpx; margin:20rpx auto 20rpx;width:600rpx' src='{{imageurl}}'></image>
+  <text style='margin:40rpx auto 20rpx'>日志</text>
+  <view style='margin:50rpx' class='mainbody' wx:for="{{text}}">
+    <text>{{item.version}}</text>
+    <text style='color:grey'>{{item.detail}}</text>
+  </view>
+ <text style='margin:300rpx auto 0rpx; color:grey;font-size:25rpx;'>源码地址(没啥东西😅)</text>
+ <view style=' display:flex; flex-direction: column; margin:0rpx;'>
+  <text style='font-size:25rpx;' >电脑链接:</text>
+  <text selectable='true' style='font-size:20rpx;'>https://github.com/GyxChen/WxApplication/tree/master/52%
+  </text>
+
+  <text selectable='true' style='font-size:20rpx;'>E8%B5%AB%E5%85%B9%E7%9A%84%E5%B0%8F%E9
+  </text>
+
+ <text selectable='true' style='font-size:20rpx;'>%91%AB
+  </text>
+<text style='font-size:25rpx;'>手机链接:</text>
+<text selectable='true' style='font-size:20rpx;'><text selectable='true' style='font-size:20rpx;'>https://github.com/GyxChen/WxApplication?files=1
+  </text>
+  </text>
+ </view>  
+</view>
+

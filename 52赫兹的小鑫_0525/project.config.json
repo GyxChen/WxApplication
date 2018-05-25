@@ -1,0 +1,112 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.94",
+	"appid": "wx4b7bb653c637ab32",
+	"projectname": "52%E8%B5%AB%E5%85%B9%E7%9A%84%E5%B0%8F%E9%91%AB",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": 0,
+					"name": "About",
+					"pathName": "pages/about/about",
+					"query": "",
+					"scene": "1001"
+				},
+				{
+					"id": -1,
+					"name": "info",
+					"pathName": "pages/updatainfo/updatainfo",
+					"query": "",
+					"scene": "1001"
+				},
+				{
+					"id": -1,
+					"name": "login",
+					"pathName": "pages/login/login",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "administrator",
+					"pathName": "pages/admin/admin",
+					"query": ""
+				},
+				{
+					"id": 5,
+					"name": "map",
+					"pathName": "pages/goTo/goTo",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "download",
+					"pathName": "pages/test/download/download",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "download2",
+					"pathName": "pages/test/download2/download2",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "home",
+					"pathName": "pages/home/home",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "doubt",
+					"pathName": "pages/Extra/doubt/doubt",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "answer",
+					"pathName": "pages/Extra/answer/answer",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "ask",
+					"pathName": "pages/Extra/ask/ask",
+					"query": ""
+				}
+			]
+		}
+	}
+}

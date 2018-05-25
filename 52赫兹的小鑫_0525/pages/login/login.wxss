@@ -1,0 +1,29 @@
+.mainbody{
+  display: flex;
+  padding: 20rpx;
+} 
+.inputheader{
+  width: 180rpx;
+  text-align: right;
+  background:-webkit-linear-gradient(right, rgba(250,250,210,0.5),rgba(250,250,210,1));
+  font-style:normal;
+  border-radius: 10rpx;
+}
+.botton{
+  display: flex;
+  justify-content: space-between;
+}
+.form{
+  border-radius: 10rpx;
+  background:-webkit-linear-gradient(right, rgba(135,206,250,0),rgba(135,206,250,0.6));
+}
+.box_input{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.hidetext{
+  background: -webkit-linear-gradient(right, rgba(255,0,28,0),rgba(255,0,28,0.6));
+  font-size:35rpx;
+  border-radius: 10%;
+}

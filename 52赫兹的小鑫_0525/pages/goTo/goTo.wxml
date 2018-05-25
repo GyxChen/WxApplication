@@ -1,0 +1,19 @@
+<!--map/map.wxml-->
+<view >
+  <view>
+    <view class="map">
+      <map id="myMap" show-location scale='17' bindmarkertap='cstall' markers="{{markers}}"  style="width: 100%; height: 450px;"/>
+      <button type="default" bindtap="moveToLocation">移动位置</button>
+      
+    </view>
+<view class='.goto'>
+  <view class='text'>
+    <text >1.点击</text>
+    <text bindtap='moveToLocation' style='color:red'>移动位置</text>
+    <text>即刻前往科协大概位置</text>
+  </view>
+  <text>2.进入宿舍宿管楼二楼</text>
+  <text>3.找到科协秘密基地</text>
+</view> 
+  </view>
+</view>

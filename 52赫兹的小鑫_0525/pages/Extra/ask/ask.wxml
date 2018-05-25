@@ -1,0 +1,14 @@
+<view class='container'>
+   <form  catchsubmit="formSubmit" catchreset="formReset">
+        <view  class="mainbody">
+          <text class='inputheader'>你的问题是?</text>
+          <textarea  name="name"  type='text' class="form" placeholder="请输入具体问题" placeholder-style='font-size:30rpx;'></textarea>
+         <view style='padding:40rpx' class="botton">
+          <button  type="primary" formType="submit">提交</button>
+           <image bindtap='return' style='width:100rpx;height:100rpx' src='http://p8cz5iv1n.bkt.clouddn.com/return.png'></image>
+          <button formType="reset">重置</button>
+         </view>
+         </view>
+      </form>
+     
+</view>

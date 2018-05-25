@@ -1,0 +1,56 @@
+  <view style='display:flex;flex-direction:column;align-items:center'>
+  <view style='height:400rpx;display:flex;flex-direction:column;' >
+    <image style='height:250rpx;width:200rpx; border-style: solid; border-radius:50%; margin:50rpx auto 0rpx' src='http://p8qebi3rc.bkt.clouddn.com/%E5%B0%8F%E8%90%8C%E6%96%B0.jpg'></image>
+    <image style='margin:20rpx auto 20rpx;height:150rpx;width:200px' src='http://p8qebi3rc.bkt.clouddn.com/logintitle.png'></image>
+    <!-- <text style='display:inline-block;padding:20rpx 280rpx 20rpx 280rpx;'>小萌新注册</text> -->
+  </view>
+
+  <view  style='dislay:flex;   height:750rpx; border-radius: 10%;' >
+
+      <form  catchsubmit="formSubmit" catchreset="formReset">
+        <view  class="mainbody">
+          <text class='inputheader'>姓名:</text>
+          <input style='width:200rpx;' name="name"  type='text' class="form" placeholder="请输入姓名" placeholder-style='font-size:30rpx;'/>
+          <image  style='width:40rpx;height:40rpx;' src='{{errorimage[0]}}'></image>
+        </view>
+
+        <view class="mainbody">
+          <text class='inputheader'>学号:</text>
+          <input style=' width:200rpx;' placeholder-style='font-size:30rpx;' name="number"  class="form" type='number' placeholder="请输入学号"/>
+          <image style='width:40rpx;height:40rpx;' src='{{errorimage[1]}}'></image>
+        </view>
+
+        <view class="mainbody">
+          <text class='inputheader'>第一志愿:</text>
+          <input  placeholder-style='font-size:30rpx;' name="firstwill"  class="form" placeholder="请输入第一志愿"/>
+          <image style='width:40rpx;height:40rpx;' src='{{errorimage[2]}}'></image>
+        </view>
+
+        <view class="mainbody">
+          <text class='inputheader'>第二志愿:</text>
+          <input  placeholder-style='font-size:30rpx;' name="secondwill"   class="form" placeholder="请输入第二志愿"/>
+          <image style='width:40rpx;height:40rpx;' src='{{errorimage[3]}}'></image>
+        </view>
+        
+        <view class="mainbody">
+          <text class='inputheader'>QQ:</text>
+          <input  placeholder-style='font-size:30rpx;' name="qq"   class="form" type='number' placeholder="请输入QQ"/>
+          <image style='width:40rpx;height:40rpx;' src='{{errorimage[4]}}'></image>
+        </view>
+
+        <view class="mainbody">
+          <text class='inputheader'>电话号码:</text>
+          <input  placeholder-style='font-size:30rpx;' name="phone"  class="form" type='number' placeholder="请输入电话号码"/>
+          <image style='width:40rpx;height:40rpx;' src='{{errorimage[5]}}'></image>
+        </view>
+
+         <view style='padding:40rpx' class="botton">
+          <button  type="primary" formType="submit">提交</button>
+          <button formType="reset">重置</button>
+         </view>
+
+      </form>
+
+  </view>
+
+</view> 

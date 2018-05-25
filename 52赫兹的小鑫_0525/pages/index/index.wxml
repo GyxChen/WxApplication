@@ -1,0 +1,72 @@
+<view class="mpage {{!ui.tStart? 'withAnimate': ''}}" style="left:{{ui.offsetLeft}}px;width: {{ui.windowWidth}}px" bindtouchstart="handlerStart" catchtouchmove="handlerMove" bindtouchcancel="handlerCancel" bindtouchend="handlerEnd" bindtap="handlerPageTap">
+  <scroll-view  bindscroll="handlerScroll" scroll-y style="height: 100%;">
+    <view>
+ <view >
+    <swiper style='padding:0 50rpx; height:500rpx;' indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{imgUrls}}">
+          <swiper-item>
+            <image src="{{item}}" class="slide-image" width="750rpx" height="150"/>
+          </swiper-item>
+        </block>
+    </swiper>
+ </view>
+
+ <view>
+
+   <view class="header">
+     <text style='font-weight:bold'>科协与技术协会</text>
+     <navigator url='../castall/castall' class='text-all'>全部</navigator>
+   </view>
+
+   <view class='content'>
+      <view class='content-item' bindtap='readArticle'  wx:for="{{contentItem}}" data-id="{{item.id}}">
+        <image class='slide-image' src='{{item.picture}}' />
+        <view>
+          <text class='content-item-text'>{{item.text}}</text>
+        </view>
+      </view>
+      
+   </view>
+    <view class="header">
+        <text style='font-weight:bold'>校园概览</text>
+        <navigator url='../all/all'  class='text-all'>全部</navigator>
+</view >
+
+    <view class="list-item" wx:for="{{bigimg}}">
+      <view class="list-item-images">
+        <image 
+        src='http://www.tdxy.com.cn/uploadfile/2017/0421/20170421042320491.jpg'class="avatar"></image>
+        <image class='slide-image' src='{{item.picture}}' style='height:100%' ></image>
+      </view>
+      <view  class="list-item-text">
+          <view  class="list-item-tex-title">
+            <text>{{item.title}}</text>
+          </view>
+          <view  class='list-item-tex-content'>
+            <text>{{item.commets}}</text>
+          </view>
+      </view>
+    </view>
+</view> 
+
+  <view class="header">
+      <text style='font-size:14px'>通达学院科协</text>
+      <navigator class='text-all' open-type='switchTab' url='../login/login' hover-class='buttontapped'>立即注册</navigator>
+  </view> 
+    <view style="display: flex;justify-content: center;">
+      <image style='width:500rpx;  border-radius: 50% ; border:2rpx dashed #445CBB;' src="http://www.tdxy.com.cn/uploadfile/2017/0421/20170421041518399.jpg" ></image>
+    </view>
+</view>
+  </scroll-view>
+</view>
+<view bindtouchstart="handlerStart" catchtouchmove="handlerMove" bindtouchcancel="handlerCancel" bindtouchend="handlerEnd" class="user" style="width: {{ui.menuWidth}}px">
+   <view style="width: {{ui.menuWidth}}px;left:{{-ui.menuWidth/3 + ui.offsetLeft/3}}px" class="user-box {{!ui.tStart? 'withAnimate': ''}}">
+     <view class="user-face-wrapper">
+       
+     </view>
+      <navigator  class='one-menu' url='/pages/updatainfo/updatainfo'>关于</navigator>
+      <navigator style='background:yellow' url='/pages/Extra/doubt/doubt' class='one-menu'>问与答</navigator>
+      <navigator style='background:snow' class='one-menu' url='/pages/admin/admin'>管理员</navigator>
+   </view>
+</view>

@@ -1,0 +1,10 @@
+<!--pages/castall/castall.wxml-->
+<!-- audio.wxml -->
+<view class="castall">
+<audio style='margin:0rpx auto 50rpx;'  src="{{src}}" poster='https://gss1.bdstatic.com/9vo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike92%2C5%2C5%2C92%2C30/sign=690d037ef9f2b211f0238d1cabe90e5d/b812c8fcc3cec3fd8536c278d488d43f879427b6.jpg' name='爱的幸运曲奇' author='AKB48' controls='true' id="myAudio" ></audio>
+<view class='.castall'>
+  <view wx:for="{{pictures}}">
+   <image src='{{item}}'></image>
+  </view>
+</view>
+</view>
